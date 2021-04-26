@@ -4,6 +4,6 @@
 ```
 GOOGLE_APPLICATION_CREDENTIALS=<path-to-your-json-key>
 ```
-![](../raw/master/docs/get-key.png)
+![](./docs/get-key.png)
 # TESTING
-![](../raw/main/docs/testing_api.png)
+![](./docs/testing_api.png)
