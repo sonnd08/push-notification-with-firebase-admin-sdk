@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import pingRoute from 'routes/ping';
+import pushNotiRoute from 'routes/pushNoti';
 import sendJson from 'utils/sendJson';
 
 const indexRouter = Router();
@@ -12,6 +13,7 @@ indexRouter.get('/', (req, res) => {
 function handleRouters(app) {
   app.use('/', indexRouter);
   app.use('/ping', pingRoute);
+  app.use('/push-noti', pushNotiRoute);
 }
 
 export default handleRouters;

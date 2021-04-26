@@ -1,11 +1,14 @@
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import express from 'express';
+import dotenv from 'dotenv';
 import httpErrors from 'http-errors';
 import logger from 'morgan';
 import sassMiddleware from 'node-sass-middleware';
-
+import { initFirebaseAdmin } from 'services/pushNotification';
 import handleRouters from 'routes/index';
+dotenv.config();
+initFirebaseAdmin();
 
 const app = express();
 
